@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+<meta name="description" content="Forget ... ..." />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NAS主机和J3455主机的新设置 | IRON-ZJL</title>
+<link rel="shortcut icon" href="https://ironzjl.leblog.top/favicon.ico?v=1691309102296">
+<link rel="stylesheet" href="https://ironzjl.leblog.top/styles/main.css">
+
+
+  <link rel="canonical" href="https://ironzjl.leblog.top/xPQqTTTDY/" />
+  <meta name="socialText" content="" />
+  <meta name="description" content="现有硬盘为：
+
+4T紫盘
+1T的2.5机械
+512G的sata固态
+2T的nvme固态
+
+J3455最终应配置为HTPC，故最好安装win10LTSC版本，之后如果配置红外遥控等设备可虚拟机虚拟其它系统；
+同时由于J3455性能尚可，正常V..." />
+  <meta name="referrer" content="always" />
+  
+  
+  <link rel="stylesheet" href="https://ironzjl.leblog.top/media/css/prism.css">
+  
+    
+  
+</head>
+
+<body class="is-preload">
+  <!-- Wrapper -->
+  <div id="wrapper">
+
+    <!-- Header -->
+<header id="header">
+  <div class="inner">
+    <!-- Logo -->
+    <a href="https://ironzjl.leblog.top" class="logo">
+      <span class="symbol"
+        ><img
+          src="https://ironzjl.leblog.top/images/avatar.png?v=1691309102296"
+          alt=""
+        />
+      </span>
+      <div class="site-title"> IRON-ZJL </div>
+    </a>
+
+    <!-- Nav -->
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Menu -->
+<nav id="menu">
+  <ul>
+    
+    
+      <li><a href="/" class="menu">
+        首页
+      </a></li>
+      
+    
+    
+      <li><a href="/archives" class="menu">
+        归档
+      </a></li>
+      
+    
+    
+      <li><a href="/tags" class="menu">
+        标签
+      </a></li>
+      
+    
+    
+      <li><a href="/about" class="menu">
+        关于
+      </a></li>
+      
+    
+  </ul>
+</nav>
+
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+        <div class="post-pagetitle">
+          <h1>
+            NAS主机和J3455主机的新设置
+          </h1>
+        </div>
+        <div class="post-info">
+          <time class="post-time">
+            2023-08-06
+          </time>
+          <span class="read-times">
+            1 min read
+          </span>
+          
+        </div>
+        
+        <div class="post-content-wrapper">
+          <div class="post-content">
+            <p>现有硬盘为：</p>
+<ol>
+<li>4T紫盘</li>
+<li>1T的2.5机械</li>
+<li>512G的sata固态</li>
+<li>2T的nvme固态</li>
+</ol>
+<p>J3455最终应配置为HTPC，故最好安装win10LTSC版本，之后如果配置红外遥控等设备可虚拟机虚拟其它系统；<br>
+同时由于J3455性能尚可，正常VPN接口速率不超1G，故可作为旁路由，切换输出网络的网关即可出国。<br>
+当前，可将所内验证客户端装在此主机后，后面接无线路由。</p>
+<p>此时，NAS主机仅作为存储设备，暂时单网卡。</p>
+<ol>
+<li>将512Gsata固态通过primocache作为2级缓存，增强4T紫盘和1T机械的读写效率，4T日常做种；</li>
+<li>配置pdu和ups；</li>
+<li>系统重装win10LTSC，200G系统盘，剩下的300G作为软件安装目录，1.5T作为重要文件存储，并加密压缩同步到阿里云和百度云；</li>
+<li>看能否设置平时休眠，当有外部FTP等文件传输发起时唤醒；</li>
+<li>配置emby，配置核显解码；</li>
+<li>探索相册管理软件，放弃nascab，看看mtphoto；</li>
+<li>局域网文件协议，自带smb，alist的dav；</li>
+</ol>
+
+          </div>
+          <div class="toc-container">
+            
+          </div>
+        </div>
+
+        <div class="page-count">
+          
+
+          
+        </div>
+      </div>
+
+      <div class="post-pagination inner">
+        
+        <div class="next-post">
+          <div>
+            <a href="https://ironzjl.leblog.top/TQ3tMs8-9/">下一篇</a>
+          </div>
+        </div>
+        
+        
+      </div>
+
+    </div>
+
+    <!-- back to top -->
+    <button oneclik="topFunction()" id="BackToTop">
+      TOP
+    </button>
+
+    <div class="post-comment inner">
+      <div class="post-comment">
+        
+
+
+
+
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer id="footer">
+  <div class="inner">
+    <section>
+      <!-- <h2>Follow</h2> -->
+      <ul class="icons">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </ul>
+    </section>
+    <ul class="copyright">
+      <!--
+      <li>
+        <a href="https://ironzjl.leblog.top/atom.xml" target="_blank">
+          RSS
+        </a> 
+      </li>
+      -->
+      
+      <!-- <li><a href="https://github.com/wherelse/gridea-theme-phantom">Theme Phantom</a></li> -->
+      <li>Waiting ... ...</li>
+
+      
+    </ul>
+  </div>
+</footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://ironzjl.leblog.top/media/scripts/jquery.min.js"></script>
+  <script src="https://ironzjl.leblog.top/media/scripts/browser.min.js"></script>
+  <script src="https://ironzjl.leblog.top/media/scripts/breakpoints.min.js"></script>
+  <script src="https://ironzjl.leblog.top/media/scripts/util.js"></script>
+  <script src="https://ironzjl.leblog.top/media/scripts/main.js"></script>
+  
+  <script src="https://ironzjl.leblog.top/media/scripts/prism.js"></script>
+  <script>
+    Prism.highlightAll();
+  </script>
+  
+  <script>
+    post_scroll();
+    back_to_top();
+  </script>
+</body>
+
+</html>

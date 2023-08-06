@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://ironzjl.leblog.top</id>
+    <title>IRON-ZJL</title>
+    <updated>2023-08-06T08:05:08.704Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://ironzjl.leblog.top"/>
+    <link rel="self" href="https://ironzjl.leblog.top/atom.xml"/>
+    <subtitle>Forget ... ...</subtitle>
+    <logo>https://ironzjl.leblog.top/images/avatar.png</logo>
+    <icon>https://ironzjl.leblog.top/favicon.ico</icon>
+    <rights>All rights reserved 2023, IRON-ZJL</rights>
+    <entry>
+        <title type="html"><![CDATA[NAS主机和J3455主机的新设置]]></title>
+        <id>https://ironzjl.leblog.top/xPQqTTTDY/</id>
+        <link href="https://ironzjl.leblog.top/xPQqTTTDY/">
+        </link>
+        <updated>2023-08-06T07:31:39.000Z</updated>
+        <content type="html"><![CDATA[<p>现有硬盘为：</p>
+<ol>
+<li>4T紫盘</li>
+<li>1T的2.5机械</li>
+<li>512G的sata固态</li>
+<li>2T的nvme固态</li>
+</ol>
+<p>J3455最终应配置为HTPC，故最好安装win10LTSC版本，之后如果配置红外遥控等设备可虚拟机虚拟其它系统；<br>
+同时由于J3455性能尚可，正常VPN接口速率不超1G，故可作为旁路由，切换输出网络的网关即可出国。<br>
+当前，可将所内验证客户端装在此主机后，后面接无线路由。</p>
+<p>此时，NAS主机仅作为存储设备，暂时单网卡。</p>
+<ol>
+<li>将512Gsata固态通过primocache作为2级缓存，增强4T紫盘和1T机械的读写效率，4T日常做种；</li>
+<li>配置pdu和ups；</li>
+<li>系统重装win10LTSC，200G系统盘，剩下的300G作为软件安装目录，1.5T作为重要文件存储，并加密压缩同步到阿里云和百度云；</li>
+<li>看能否设置平时休眠，当有外部FTP等文件传输发起时唤醒；</li>
+<li>配置emby，配置核显解码；</li>
+<li>探索相册管理软件，放弃nascab，看看mtphoto；</li>
+<li>局域网文件协议，自带smb，alist的dav；</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NAS组装]]></title>
+        <id>https://ironzjl.leblog.top/TQ3tMs8-9/</id>
+        <link href="https://ironzjl.leblog.top/TQ3tMs8-9/">
+        </link>
+        <updated>2023-05-16T07:37:36.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="230506">230506</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">项目</th>
+<th style="text-align:center">型号</th>
+<th style="text-align:center">备注</th>
+<th style="text-align:center">价格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">机箱</td>
+<td style="text-align:center">御夫座</td>
+<td style="text-align:center">随4把机箱风扇+CPU散热+sata定制线</td>
+<td style="text-align:center">758+20运费</td>
+</tr>
+<tr>
+<td style="text-align:center">CPU</td>
+<td style="text-align:center">12100</td>
+<td style="text-align:center">4c8t</td>
+<td style="text-align:center">650</td>
+</tr>
+<tr>
+<td style="text-align:center">主板</td>
+<td style="text-align:center">B660M-K d4</td>
+<td style="text-align:center">华硕，双内存，4sata，全新</td>
+<td style="text-align:center">598</td>
+</tr>
+<tr>
+<td style="text-align:center">电源</td>
+<td style="text-align:center">全汉450w</td>
+<td style="text-align:center">全模组SFX， 京东</td>
+<td style="text-align:center">419</td>
+</tr>
+<tr>
+<td style="text-align:center">内存</td>
+<td style="text-align:center">8G* 2</td>
+<td style="text-align:center">淘宝，3200，长鑫颗粒</td>
+<td style="text-align:center">192</td>
+</tr>
+<tr>
+<td style="text-align:center">固态</td>
+<td style="text-align:center">2T 幻隐</td>
+<td style="text-align:center">PCIE4.0X4</td>
+<td style="text-align:center">479</td>
+</tr>
+<tr>
+<td style="text-align:center">总价</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">-</td>
+<td style="text-align:center">3116</td>
+</tr>
+</tbody>
+</table>
+<p>参考链接  <a href="https://vlieo.com/post/setup-unraid-nas/">https://vlieo.com/post/setup-unraid-nas/</a></p>
+<h1 id="230520">230520</h1>
+<p>下载win10 LTSC版本，在nextitellyou下载，原先的msdnitellyou也行（版本只到2019）。</p>
+<p>win11专业版，tb买激活码，保持系统的功能是完善的。后续限制功耗可从bios硬件限制。</p>
+<h1 id="230523">230523</h1>
+<p>电源换成全汉450W全模组电源，CPU温度显著改善，且全模组电源比直出电源好安装太多，也整洁太多。<br>
+只是4P到sata供电的线有点短，之后插PCIE设备可能不好插，故买了4P延长线，之后看能不能用吧。</p>
+<h1 id="软件">软件</h1>
+<h2 id="外网访问">外网访问</h2>
+<ol>
+<li>qbit：<br>
+frp, 做好多次失败加入黑名单；<br>
+2T的nvme做种，好东西机械存一份，从固态往云端传一份，nvme删除<br>
+512的固态装软件，留作备用；<br>
+1T的小机械mteam；</li>
+<li>文件下载上传<br>
+文件备份的话，1T的那个机械就放冷数据，但每次备份都打成一个小包，同时传到aliyun上。这部分之前的数据需要重新整理一番，按日期整，都搞成小包，一些完全没意义的数据该删就删。本地可以存成文件夹，但也要压缩一份传到aliyun。<br>
+公网的话，还是用frp吧，移动端开启ipv6也行<br>
+假期期间关闭frp，开启ipv6.</li>
+<li>远程桌面<br>
+使用rdviewer</li>
+</ol>
+<h2 id="内网访问">内网访问</h2>
+<ol>
+<li>文件服务：<br>
+开nascab的webdav</li>
+<li>影音：<br>
+nascab</li>
+<li>远程桌面<br>
+内网微软桌面</li>
+</ol>
+<h2 id="其它">其它</h2>
+<ol>
+<li>相册<br>
+nascab</li>
+<li>diskinfo<br>
+监控硬盘信息</li>
+<li>阿里云盘上传下载<br>
+暂定手动拖到官方程序里。</li>
+<li>win 桌面上记录每个应用用到的端口。</li>
+</ol>
+]]></content>
+    </entry>
+</feed>
